@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.info-wrapper {
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+#image-type {
+    max-width: 100px;
+    text-align: center;
+    align-self: center
+}
+
+h2, h4, #desc, img {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 30px;
+    cursor: pointer;
+}

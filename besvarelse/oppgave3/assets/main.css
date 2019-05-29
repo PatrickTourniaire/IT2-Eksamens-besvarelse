@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form select {
+    margin-bottom: 15px;
+}
+
+button {
+    cursor: pointer;
+}

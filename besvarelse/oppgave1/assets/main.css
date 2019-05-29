@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.info-wrapper {
+    margin-bottom: 50px;
+}
+
+.img-select-parent {
+    max-width: 1300px;
+}
+
+.img-select-parent img {
+    width: 400px;
+    cursor: pointer;
+}
+
+#description {
+    max-width: 400px;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    line-height: 1.5em;
+}

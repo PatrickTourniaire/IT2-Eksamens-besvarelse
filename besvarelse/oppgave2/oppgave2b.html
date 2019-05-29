@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Oppgave 2a</title>
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="assets/main.css" type="text/css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="info-wrapper">
+                <h2>Hvor mange piksler?</h2>
+                <p id="desc">Fyll ut høyde og bredde av et bilde i antall piksler for å få det totale antallet!</p>
+
+                <img src="" id="image-type"/>
+                    
+                <h4 id="response-header"></h4>
+                <p id="pixels"></p>
+                <p id="mega-pixels"></p>
+            </div>
+
+            <div class="form">
+                <p id="sm-header">Høyde</p>
+                <input type="number" id="input-height" min="0"/>
+
+                <p id="sm-header">Bredde</p>
+                <input type="number" id="input-width" max="1920" min="0"/>
+
+                <button id="submit" class="showImage">Regn ut</button>
+            </div>
+        </div>
+
+        <script src="assets/main.js"></script>
+        <script>
+            const btnShowImage = document.querySelector(".showImage");
+            const imageOrientation = document.querySelector("#image-type");
+
+            btnShowImage.onclick = function() {
+                const width = Number(inputWidth.value);
+
+                if (width <= maxWidth) {
+                    const sourceToImage = getImageUrl();
+                    imageOrientation.src = sourceToImage;
+                }
+
+                displayNumOfPixels();
+            }
+        </script>
+    </body>
+</html>
